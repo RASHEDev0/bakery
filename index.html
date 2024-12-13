@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Treats Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Sweet Treats Bakery</h1>
+        <p>Delicious homemade treats just for you!</p>
+    </section>
+
+    <!-- Products Section -->
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+
+        <div class="product-item">
+            <img src="pics/products/download.jpeg" alt="Vanilla Cookies">
+            <h3>Chocolate Cake</h3>
+            <p>Rich and moist chocolate cake topped with creamy frosting.</p>
+            <span class="price">$15.00</span>
+        </div>
+
+        <div class="product-item">
+            <img src="pics/products/download (1).jpeg" alt="Chocolate Cake">
+            <h3>Vanilla Cookies</h3>
+            <p>Buttery vanilla cookies with a hint of sweetness.</p>
+            <span class="price">$8.00</span>
+        </div>
+
+        <div class="product-item">
+            <img src="pics/products/OIP.jpeg" alt="Croissants">
+            <h3>Croissants</h3>
+            <p>Flaky and buttery croissants, perfect for breakfast or a snack.</p>
+            <span class="price">$12.00</span>
+        </div>
+
+        <!-- Add more product items as needed -->
+    </div>
+</section>
+
+    <!-- Online Ordering Section -->
+    <section id="order">
+        <h2>Place Your Order</h2>
+        <form action="order.php" method="post">
+            <label for="product">Product:</label>
+            <select id="product" name="product">
+                <option value="cake">Cake</option>
+                <option value="cookie">Cookie</option>
+                <option value="pastry">Pastry</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+            <label for="delivery">Delivery Details:</label>
+            <textarea id="delivery" name="delivery"></textarea>
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Welcome to Sweet Treats Bakery, where every treat is a labor of love!</p>
+            <p>We started as a small family-run bakery and have grown into a beloved community gem. Our team is passionate about baking and dedicated to crafting delightful treats that bring smiles to our customers' faces.</p>
+            <div class="team-photos">
+                <img src="pics/person.jpeg" alt="Founder">
+                <img src="pics/team.jpeg" alt="Our Team">
+            </div>
+        </div>
+    </section>
+
+
+<!-- Image Gallery Section -->
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="pics/OIP (1).jpeg" alt="Gallery Item 1">
+        </div>
+        <div class="gallery-item">
+            <img src="pics/OIP (9).jpeg" alt="Gallery Item 2">
+        </div>
+        <div class="gallery-item">
+            <img src="pics/OIP.jpeg" alt="Gallery Item 3">
+        </div>
+        <!-- Add more gallery items as needed -->
+    </div>
+</section>
+
+
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-posts">
+            <article class="post">
+                <h3>Recipe of the Month: Chocolate Lava Cake</h3>
+                <p>Indulge in the gooey goodness of our Chocolate Lava Cake! Click to read the full recipe and baking tips to perfect this decadent dessert.</p>
+                <button>Read More</button>
+            </article>
+            <article class="post">
+                <h3>Baking Tips: Perfect Pastry Crust</h3>
+                <p>Learn the secrets to achieving a flaky, buttery pastry crust every time. Our expert tips will elevate your baking game!</p>
+                <button>Read More</button>
+            </article>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="contact-details">
+            <p>Address: 123 Sweet Street, Candyland</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Follow Us</h2>
+        <a href="https://facebook.com/SweetTreatsBakery">Facebook</a>
+        <a href="https://instagram.com/SweetTreatsBakery">Instagram</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
